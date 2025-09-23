@@ -1,9 +1,14 @@
 <nav class="navbar bg-dark">
-  <h2>Online Shop</h2>
+  <li routerLinkActive="active" >
+    <a [routerLink]="['']"> <h1>Online Shop</h1></a>
+  </li>
 
   <ul>
     <li routerLinkActive="active">
       <a [routerLink]="['/about']">About us</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/login']">Login</a>
     </li>
   </ul>
 
