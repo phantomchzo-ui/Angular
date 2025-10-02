@@ -8,4 +8,12 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule] // <- импортируем RouterModule прямо в компонент
 })
-export class AppComponent {}
+export class AppComponent {
+  likes = 0;
+
+  onLike() {
+    this.likes++;
+    console.log(`Likes increased to: ${this.likes}`);
+  }
+
+}
