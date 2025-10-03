@@ -1,0 +1,10 @@
+
+<div class="todos">
+    <button (click)="loadTodos()">Load Todos</button>
+    
+    <ul *ngIf="loaded">
+      <li *ngFor="let todo of todos">
+        {{ todo.title }}
+      </li>
+    </ul>
+</div>
